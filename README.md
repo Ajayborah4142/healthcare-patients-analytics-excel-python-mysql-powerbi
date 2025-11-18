@@ -120,6 +120,33 @@ Each query is followed by the observed result from the sample dataset (for repro
 
 ---
 
+## Key Metrics at a Glance
+
+* **Total Patients:** 55,000
+* **Unique Medical Conditions:** 6 (Arthritis, Diabetes, Hypertension, Asthma, Obesity, Cancer)
+* **Top Insurance Provider:** Cigna (11,249 claims)
+* **Average Billing Amount:** $25,537
+* **Most Frequent Admission Type:** Elective
+* **Highest Monthly Revenue:** July ($122.75M)
+* **Lowest Monthly Revenue:** February ($107.89M)
+* **Most Prescribed Medication:** Lipitor (11,140 prescriptions)
+* **Room with Highest Turnover:** Room 393 (181 patients)
+
+## Findings (summary of results from the sample dataset)
+
+> The following is a high-level summary extracted from the dataset used while developing this project. Re-run the queries on your data to confirm.
+
+* **Age & Gender:** The dataset includes a wide age range (teens through 80s). There are clear counts per age and gender — useful for targeted services and staffing.
+* **Most common condition:** *Arthritis* was the top single medical condition by record count in the sample run.
+* **Top billed conditions:** Conditions showing the highest average billing were Obesity, Diabetes, Asthma, Arthritis, Hypertension, and Cancer (in descending order by sample averages).
+* **Insurance providers:** Cigna, Medicare, UnitedHealthcare, Blue Cross, and Aetna were the largest providers by claim count.
+* **Monthly revenue pattern:** The dataset shows monthly variation in total billing, with `February` being the lowest and `July/August` the highest in the sample.
+* **Resource hotspots:** Some rooms (e.g., 393, 491, 420) appear more frequently used — these may be high-turnover or specialty rooms.
+* **Medications:** Top prescribed items included Lipitor, Ibuprofen, Aspirin, Paracetamol, and Penicillin.
+* **Test result correlation:** Average billing across `Normal`, `Inconclusive`, and `Abnormal` test results was similar (sample averages are within a narrow band), suggesting more analysis is needed to detect cost drivers.
+
+---
+
 ## Next steps & recommendations
 
 1. **Data quality checks:** Add scripts to validate and clean columns (missing dates, anomalous ages, negative billing values, inconsistent medication names).
