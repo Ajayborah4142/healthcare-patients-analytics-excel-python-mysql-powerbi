@@ -1,6 +1,6 @@
 # Healthcare Analysis
 
-**Project:** Patient Demographics, Revenue & Operational Analysis (Ecxel,Python,MySQL)
+**Project:** Patient Demographics, Revenue & Operational Analysis (Ecxel,Python,MySQL,Power BI)
 
 **Description**
 
